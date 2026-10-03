@@ -1,0 +1,23 @@
+AG TRAFIGI IZLEME VE ANOMALI TESPITI
+
+1. ZIP'i ac. network_anomaly_detection klasorunu Desktop\projects altina koy.
+2. Bu klasorde PowerShell ac. smoke_test.py ve requirements.txt gorunmeli.
+3. Asagidaki komutlari sirayla calistir:
+
+py -3 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --upgrade pip
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe smoke_test.py
+
+Son satir SMOKE TEST PASSED olmali.
+Bu ilk test icin Wireshark kurulumu veya dataset indirme gerekmez.
+Bu testten gercek saldiri tespit basarisi hesaplanmaz.
+
+SONRA: README_TR.md dosyasindaki 2. adimdan devam et.
+Wireshark + TShark + Npcap kur, interfaces komutuyla adaptoru sec.
+Ardindan normal trafik kaydi topla, modeli egit ve canli izlemeyi baslat.
+Algoritma One-Class SVM. ANOMALI tek basina saldiri kaniti degildir.
+
+.env gerekmiyor. .venv projeye ait Python ortamidir.
+Dosyalar doluysa uzerine yazilmaz; yeni dosya veya run adi kullan.
+

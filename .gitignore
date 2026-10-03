@@ -1,0 +1,42 @@
+.venv/
+__pycache__/
+*.pyc
+data/
+runs/
+*.pcap
+*.pcapng
+*.joblib
+.env
+# Python and local environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+# Private data, experiments and backups
+data/
+private_data/
+runs/
+backups/
+checkpoints/
+*.pt
+*.pth
+*.joblib
+*.pkl
+*.pickle
+*.pcap
+*.pcapng
+*.csv
+*.xlsx
+*.xls
+*.zip
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
